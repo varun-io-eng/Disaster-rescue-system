@@ -41,34 +41,34 @@ This project demonstrates the use of **graphs (for area connections), shortest p
 ---
 
 ## 📋 Menu Options  
--===== DISASTER MANAGEMENT SYSTEM =====
--[1] Add Area
--[2] Connect Areas
--[3] Add Rescue Team
--[4] Dispatch Rescue Teams (By Severity)
--[5] Show Summary
--[0] Exit
--Type `99` anytime to re-display the menu.  
+===== DISASTER MANAGEMENT SYSTEM =====
+[1] Add Area
+[2] Connect Areas
+[3] Add Rescue Team
+[4] Dispatch Rescue Teams (By Severity)
+[5] Show Summary
+[0] Exit
 
 ---
 
 ## ▶️ How to Run  
 
 
--Enter your choice (type 99 to show menu): 1
--Enter area name: ZoneA
--Enter severity (1-10): 8
--[SUCCESS] Area 'ZoneA' added with severity 8.
+Enter your choice (type 99 to show menu): 1
+Enter area name: ZoneA
+Enter severity (1-10): 8
+[SUCCESS] Area 'ZoneA' added with severity 8.
 
--Enter your choice: 2
--Enter area 1: base
--Enter area 2: ZoneA
--Enter distance: 5
--[SUCCESS] Connected base <--> ZoneA with distance 5.
+Enter your choice: 2
+Enter area 1: base
+Enter area 2: ZoneA
+Enter distance: 5
+[SUCCESS] Connected base <--> ZoneA with distance 5.
 
--Enter your choice: 3
--Enter rescue team name: Team1
--[SUCCESS] Rescue team 'Team1' added at base.
+Enter your choice: 3
+Enter rescue team name: Team1
+[SUCCESS] Rescue team 'Team1' added at base.
 
--Enter your choice: 4
--[DISPATCH] 'Team1' dispatched to ZoneA via: base -> ZoneA
+Enter your choice: 4
+[DISPATCH] 'Team1' dispatched to ZoneA via: base -> ZoneA
+
