@@ -41,19 +41,20 @@ This project demonstrates the use of **graphs (for area connections), shortest p
 ---
 
 ## 📋 Menu Options  
-
+===== DISASTER MANAGEMENT SYSTEM =====
+[1] Add Area
+[2] Connect Areas
+[3] Add Rescue Team
+[4] Dispatch Rescue Teams (By Severity)
+[5] Show Summary
+[0] Exit
 Type `99` anytime to re-display the menu.  
 
 ---
 
 ## ▶️ How to Run  
 
-### On Linux / WSL  
-```bash
-g++ -o disaster disaster.cpp
-./disaster
-g++ disaster.cpp -o disaster.exe
-disaster.exe
+
 Enter your choice (type 99 to show menu): 1
 Enter area name: ZoneA
 Enter severity (1-10): 8
