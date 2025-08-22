@@ -75,7 +75,7 @@ public:
     }
 
     void dispatchTeams() {
-        // Create max-heap by severity
+       
         priority_queue<pair<int, string>> pq;
         for (auto& [name, area] : areas) {
             if (area->severity > 0) {
@@ -86,7 +86,7 @@ public:
         while (!pq.empty()) {
             auto [sev, zone] = pq.top(); pq.pop();
 
-            // First, try to assign from base
+           
             RescueTeam* available = nullptr;
             for (auto* team : teams) {
                 if (!team->busy && team->location == base) {
@@ -95,7 +95,7 @@ public:
                 }
             }
 
-            // If none at base, try to reassign from already dispatched teams
+           
             if (!available) {
                 int minDist = INT_MAX;
                 for (auto* team : teams) {
@@ -114,7 +114,7 @@ public:
                 continue;
             }
 
-            // Assign the selected team
+       
             vector<string> path = getShortestPath(available->location, zone);
             if (path.empty()) {
                 cout << "[ERROR] No path from " << available->location << " to " << zone << "\n";
@@ -128,9 +128,9 @@ public:
             }
             cout << "\n";
 
-            // Update system state
+     
             available->location = zone;
-            available->busy = false; // Assume instant rescue
+            available->busy = false; 
             areas[zone]->severity = 0;
         }
     }
@@ -192,7 +192,6 @@ public:
     }
 };
 
-// ======================= MAIN ========================
 
 int main() {
     DisasterSystem system;
